@@ -1,0 +1,98 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Pay1193.Services;
+using Pay1193.Entity;
+using Pay1193.Models;
+
+namespace Pay1193.Controllers
+{
+    public class EmployeeController : Controller
+    {
+        private readonly IEmployee _employeeService;
+        public EmployeeController(IEmployee employeeService)
+        {
+            _employeeService = employeeService;
+        }
+
+        public IActionResult Index()
+        {
+            var employee = _employeeService.GetAll().Select(employee => new EmployeeIndexViewModel
+            {
+                Id = employee.Id,
+                EmployeeNo = employee.EmployeeNo,
+                FullName = employee.FullName,
+                Gender = employee.Gender,
+                ImageUrl = employee.ImageUrl,
+                DateJoined = employee.DateJoined,
+                Designation = employee.Designation,
+                Email = employee.Email
+            });
+            return View(employee);
+        }
+
+        public IActionResult Detail(int id)
+        {
+            var employee = _employeeService.GetById(id);
+            if(employee == null)
+            {
+                return NotFound();
+            }
+            EmployeeDetailsViewModel model = new EmployeeDetailsViewModel()
+            {
+                Id = employee.Id,
+                EmployeeNo = employee.EmployeeNo,
+                FullName = employee.FullName,
+                Gender = employee.Gender,
+                ImageUrl = employee.ImageUrl,
+                DoB = employee.DoB,
+                Designation = employee.Designation,
+                Email = employee.Email,
+                NationalInsuranceNo = employee.NationalInsuranceNo,
+                PaymentMethod = employee.PaymentMethod,
+                StudentLoan = employee.StudentLoan,
+                UnionMember = employee.UnionMember,
+                Address = employee.Address,
+                City = employee.City,
+                PostCode = employee.PostCode
+            };
+            return View(model);
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var model = new EmployeeCreateViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(EmployeeCreateViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var employee = new Employee
+                {
+                    Id = model.Id,
+                    FirstName = model.FirstName,
+                    MiddleName = model.MidleName,
+                    LatName = model.LastName,
+                    Gender = model.Gender,
+                    DoB = model.DOB,
+                    DateJoined = model.DateJoined,
+                    Designation = model.Designation,
+                    NationalInsuranceNo = model.NationalInsuranceNo,
+                    StudentLoan = model.StudentLoan,
+                    PaymentMethod = model.PaymentMethod,
+                    UnionMember= model.UnionMember,
+                    Phone = model.Phone,
+                    Address = model.Address,
+                    City = model.City,
+                    PostCode = model.Postcode
+                };
+                if(model.ImageUrl != null & model.ImageUrl.Length > 0)
+                {
+
+                }
+            }
+            return View(); 
+        }
+    }
+}
