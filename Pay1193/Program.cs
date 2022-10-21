@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Pay1193.Persistence;
+using Pay1193.Services;
+using Pay1193.Services.Implement;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(opts =>
 {
     opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddScoped<IEmployee, EmployeeService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

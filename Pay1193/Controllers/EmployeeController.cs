@@ -8,9 +8,11 @@ namespace Pay1193.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployee _employeeService;
-        public EmployeeController(IEmployee employeeService)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public EmployeeController(IEmployee employeeService, IWebHostEnvironment webHostEnvironment)
         {
             _employeeService = employeeService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -25,7 +27,7 @@ namespace Pay1193.Controllers
                 DateJoined = employee.DateJoined,
                 Designation = employee.Designation,
                 Email = employee.Email
-            });
+            }).ToList();
             return View(employee);
         }
 
@@ -89,10 +91,41 @@ namespace Pay1193.Controllers
                 };
                 if(model.ImageUrl != null & model.ImageUrl.Length > 0)
                 {
+                    var uploadDir = @"images/employees";
+                    var filename = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
+                    var extension = Path.GetExtension(model.ImageUrl.FileName);
+                    var webrootPath = _webHostEnvironment.WebRootPath;
+                    filename = DateTime.UtcNow.ToString("yymmssfff") + filename + extension;
+                    var path = Path.Combine(webrootPath,uploadDir, filename);
+                    await model.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));
+                    employee.ImageUrl = "/" + uploadDir + "/" + filename;
 
                 }
+                await _employeeService.CreateAsync(employee);
+                return RedirectToAction("Index");
             }
             return View(); 
+        }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var employee = _employeeService.GetById(id);
+            if(employee == null)
+            {
+                return NotFound();
+            }
+            var model = new EmployeeDeleteViewModel
+            {
+                Id = employee.Id,
+                FullName = employee.FullName
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Delete(EmployeeDeleteViewModel model)
+        {
+            await _employeeService.Delete(model.Id);
+            return RedirectToAction("Index");
         }
     }
 }
