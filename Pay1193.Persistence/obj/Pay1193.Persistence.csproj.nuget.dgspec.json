@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {}
+    "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+    "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
         "projectName": "Pay1193.Entity",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\obj\\",
+        "projectPath": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "packagesPath": "C:\\Users\\maivu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maivu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,17 +65,17 @@
         }
       }
     },
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
+    "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
         "projectName": "Pay1193.Persistence",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+        "packagesPath": "C:\\Users\\maivu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maivu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
+              "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+                "projectPath": "C:\\Users\\maivu\\Desktop\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
               }
             }
           }

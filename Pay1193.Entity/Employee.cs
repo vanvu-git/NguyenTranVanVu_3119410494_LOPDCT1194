@@ -15,7 +15,7 @@ namespace Pay1193.Entity
         public string EmployeeNo { get; set; }
         [Required, MaxLength(50)]
         public string FirstName { get; set; }
-        public string MiddleName { get; set; }
+        public string? MiddleName { get; set; }
         [Required, MaxLength(50)]
         public string LatName { get; set; }
         public string FullName { get; set; }

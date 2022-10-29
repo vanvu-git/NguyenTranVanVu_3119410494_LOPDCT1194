@@ -87,7 +87,10 @@ namespace Pay1193.Controllers
                     Phone = model.Phone,
                     Address = model.Address,
                     City = model.City,
-                    PostCode = model.Postcode
+                    PostCode = model.Postcode,
+                    Email = model.Email,
+                    EmployeeNo = model.EmployeeNo,
+                    FullName = model.FullName
                 };
                 if(model.ImageUrl != null & model.ImageUrl.Length > 0)
                 {

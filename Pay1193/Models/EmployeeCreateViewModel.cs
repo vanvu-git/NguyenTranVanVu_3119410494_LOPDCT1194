@@ -11,12 +11,13 @@ namespace Pay1193.Models
         [RegularExpression(@"^[A-Z]{3,3}[0-9]{3}$")]
         public string EmployeeNo { get; set; }
         [Required(ErrorMessage = "First Name is required"), StringLength(50, MinimumLength = 2)]
-        [RegularExpression(@"^[A-Z][a-zA-Z]""'\s-]*$"), Display(Name = "First Name")]
+        [RegularExpression(@"^[A-Z][a-zA-Z""'\s-]*$"), Display(Name = "First Name")]
         public string FirstName { get; set; }
+
         [StringLength(50), Display(Name = "Middle Name")]
-        public string MidleName { get; set; }
+        public string? MidleName { get; set; }
         [Required(ErrorMessage = "Last Name is required"), StringLength(50, MinimumLength = 2)]
-        [RegularExpression(@"^[A-Z][a-zA-Z]""'\s-]*$"), Display(Name = "Last Name")]
+        [RegularExpression(@"^[A-Z][a-zA-Z""'\s-]*$"), Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required, MaxLength(200)]
         public string FullName
@@ -30,6 +31,7 @@ namespace Pay1193.Models
         }
 
         public string Gender { get; set; }
+        [Required(ErrorMessage = "Photo is required")]
         [Display(Name = "Photo")]
         public IFormFile ImageUrl { get; set; }
         [DataType(DataType.Date), Display(Name = "Date Of Birth")]
