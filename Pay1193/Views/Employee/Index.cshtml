@@ -52,7 +52,23 @@
                                 </td>
                                 <td>@item.Email</td>
                                 <td>@item.DateJoined</td>
-                                <td>Action</td>
+                                <td>
+                                    <a class="text-primary" 
+                                    asp-controller="Employee" 
+                                    asp-action="Detail"
+                                    asp-route-id="@item.Id"><i class="fas fa-bars"></i>Detail</a>
+
+                                   <a class="text-success"
+                                   asp-controller="Employee"
+                                   asp-action="Edit"
+                                   asp-route-id="@item.Id"><i class="fas fa-edit"></i>Edit</a>
+
+                                   <a class="text-danger"
+                                   asp-controller="Employee"
+                                   asp-action="Delete"
+                                   asp-route-id="@item.Id"><i class="fas fa-trash-alt"></i>Delete</a>
+                                </td>
+                               
                             </tr>
                         }
                     </tbody>

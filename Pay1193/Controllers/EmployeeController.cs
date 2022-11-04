@@ -109,6 +109,83 @@ namespace Pay1193.Controllers
             }
             return View(); 
         }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var employee = _employeeService.GetById(id);
+            if(employee == null)
+            {
+                return NotFound();
+            }
+            var model = new EmployeeEditViewModel()
+            {
+                Id = employee.Id,
+                FirstName = employee.FirstName,
+                LastName = employee.LatName,
+                MidleName = employee.MiddleName,
+                EmployeeNo = employee.EmployeeNo,
+                Gender = employee.Gender,
+                Email = employee.Email,
+                DOB = employee.DoB,
+                DateJoined = employee.DateJoined,
+                Designation = employee.Designation,
+                NationalInsuranceNo = employee.NationalInsuranceNo,
+                PaymentMethod = employee.PaymentMethod,
+                StudentLoan = employee.StudentLoan,
+                UnionMember = employee.UnionMember,
+                Address = employee.Address,
+                City = employee.City,
+                Postcode = employee.PostCode
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(EmployeeEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var employee = new Employee
+                {
+                    Id = model.Id,
+                    FirstName = model.FirstName,
+                    MiddleName = model.MidleName,
+                    LatName = model.LastName,
+                    Gender = model.Gender,
+                    DoB = model.DOB,
+                    DateJoined = model.DateJoined,
+                    Designation = model.Designation,
+                    NationalInsuranceNo = model.NationalInsuranceNo,
+                    StudentLoan = model.StudentLoan,
+                    PaymentMethod = model.PaymentMethod,
+                    UnionMember = model.UnionMember,
+                    Phone = model.Phone,
+                    Address = model.Address,
+                    City = model.City,
+                    PostCode = model.Postcode,
+                    Email = model.Email,
+                    EmployeeNo = model.EmployeeNo,
+                    FullName = model.FullName
+                };
+                if (model.ImageUrl != null & model.ImageUrl.Length > 0)
+                {
+                    var uploadDir = @"images/employees";
+                    var filename = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
+                    var extension = Path.GetExtension(model.ImageUrl.FileName);
+                    var webrootPath = _webHostEnvironment.WebRootPath;
+                    filename = DateTime.UtcNow.ToString("yymmssfff") + filename + extension;
+                    var path = Path.Combine(webrootPath, uploadDir, filename);
+                    await model.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));
+                    employee.ImageUrl = "/" + uploadDir + "/" + filename;
+
+                }
+                await _employeeService.UpdateAsync(employee);
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
         [HttpGet]
         public IActionResult Delete(int id)
         {
