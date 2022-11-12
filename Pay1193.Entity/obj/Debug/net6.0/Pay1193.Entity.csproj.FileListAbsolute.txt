@@ -22,3 +22,15 @@ C:\Users\maivu\Desktop\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.dl
 C:\Users\maivu\Desktop\pay1193\Pay1193.Entity\obj\Debug\net6.0\refint\Pay1193.Entity.dll
 C:\Users\maivu\Desktop\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.pdb
 C:\Users\maivu\Desktop\pay1193\Pay1193.Entity\obj\Debug\net6.0\ref\Pay1193.Entity.dll
+F:\repos\pay1193\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.deps.json
+F:\repos\pay1193\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.dll
+F:\repos\pay1193\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.pdb
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.csproj.AssemblyReference.cache
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.GeneratedMSBuildEditorConfig.editorconfig
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.AssemblyInfoInputs.cache
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.AssemblyInfo.cs
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.csproj.CoreCompileInputs.cache
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.dll
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\refint\Pay1193.Entity.dll
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.pdb
+F:\repos\pay1193\Pay1193.Entity\obj\Debug\net6.0\ref\Pay1193.Entity.dll

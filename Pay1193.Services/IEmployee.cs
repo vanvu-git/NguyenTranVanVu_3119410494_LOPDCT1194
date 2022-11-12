@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace Pay1193.Services
 {
     public interface IEmployee
@@ -17,5 +17,6 @@ namespace Pay1193.Services
         IEnumerable<Employee> GetAll();
         decimal UnionFee(int id);
         decimal StudentLoanRepaymentAmount(int id, decimal totalAmount);
+        IEnumerable<SelectListItem> GetAllEmployeesForPayroll();
     }
 }

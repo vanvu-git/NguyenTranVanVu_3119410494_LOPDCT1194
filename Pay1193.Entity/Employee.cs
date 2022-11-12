@@ -40,5 +40,6 @@ namespace Pay1193.Entity
 
         [Required, MaxLength(20)]
         public string PostCode { get; set; }
+        public ICollection<PaymentRecord> PaymentRecords { get; set; }
     }
 }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193\\Pay1193.csproj": {}
+    "F:\\repos\\pay1193\\Pay1193\\Pay1193.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+    "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "projectUniqueName": "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
         "projectName": "Pay1193.Entity",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\obj\\",
+        "projectPath": "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\pay1193\\Pay1193.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
@@ -64,24 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
+    "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+        "projectUniqueName": "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
         "projectName": "Pay1193.Persistence",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\obj\\",
+        "projectPath": "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\pay1193\\Pay1193.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
               }
             }
           }
@@ -111,6 +109,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
@@ -148,24 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\Pay1193.Services.csproj": {
+    "F:\\repos\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\Pay1193.Services.csproj",
+        "projectUniqueName": "F:\\repos\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj",
         "projectName": "Pay1193.Services",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\Pay1193.Services.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\obj\\",
+        "projectPath": "F:\\repos\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\pay1193\\Pay1193.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -179,11 +178,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
               },
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj"
               }
             }
           }
@@ -198,6 +197,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
@@ -219,24 +222,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193\\Pay1193.csproj": {
+    "F:\\repos\\pay1193\\Pay1193\\Pay1193.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193\\Pay1193.csproj",
+        "projectUniqueName": "F:\\repos\\pay1193\\Pay1193\\Pay1193.csproj",
         "projectName": "Pay1193",
-        "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193\\Pay1193.csproj",
-        "packagesPath": "C:\\Users\\MaiVanPhuongVu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193\\obj\\",
+        "projectPath": "F:\\repos\\pay1193\\Pay1193\\Pay1193.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\pay1193\\Pay1193\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\MaiVanPhuongVu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -250,14 +250,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
               },
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj"
               },
-              "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\Pay1193.Services.csproj": {
-                "projectPath": "C:\\Users\\MaiVanPhuongVu\\Desktop\\project\\Pay1193\\Pay1193.Services\\Pay1193.Services.csproj"
+              "F:\\repos\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj": {
+                "projectPath": "F:\\repos\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj"
               }
             }
           }
@@ -272,6 +272,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
@@ -312,7 +316,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
