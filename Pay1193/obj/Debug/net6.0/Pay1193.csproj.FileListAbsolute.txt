@@ -203,3 +203,10 @@ F:\repos\pay1193\Pay1193\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.
 F:\repos\pay1193\Pay1193\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 F:\repos\pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.dll
 F:\repos\pay1193\Pay1193\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+F:\repos\pay1193\Pay1193\bin\Debug\net6.0\Pay1193.staticwebassets.runtime.json
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\Pay1193.MvcApplicationPartsAssemblyInfo.cs
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\staticwebassets.build.json
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\staticwebassets.development.json
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\scopedcss\bundle\Pay1193.styles.css
+F:\repos\pay1193\Pay1193\obj\Debug\net6.0\scopedcss\projectbundle\Pay1193.bundle.scp.css

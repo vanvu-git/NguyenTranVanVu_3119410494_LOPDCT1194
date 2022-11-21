@@ -15,13 +15,11 @@ namespace Pay1193.Entity
         [ForeignKey("Employee")]
         public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
-
         public DateTime DatePay { get; set; }
-        public DateTime MonthPay { get; set; }
+        public string MonthPay { get; set; }
         [ForeignKey("TaxYear")]
         public int TaxYearId { get; set; }
         public TaxYear TaxYear { get; set; }
-
         public string TaxCode { get; set; }
         [Column(TypeName ="decimal(18,2)")]
         public decimal HourlyRate { get; set; }

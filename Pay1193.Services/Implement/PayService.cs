@@ -1,4 +1,5 @@
-﻿using Pay1193.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Pay1193.Entity;
 using Pay1193.Persistence;
 using System;
 using System.Collections.Generic;
@@ -50,7 +51,7 @@ namespace Pay1193.Services.Implement
 
         public TaxYear GetTaxYearById(int id)
         {
-            throw new NotImplementedException();
+            return _context.TaxYears.Where(year => year.Id == id).FirstOrDefault();
         }
 
         public decimal NetPay(decimal totalEarnings, decimal totalDeduction)
@@ -59,16 +60,16 @@ namespace Pay1193.Services.Implement
 
         }
 
-        public decimal OvertimeEarnings(decimal overtimeEarnings, decimal contractualEarnings)
+        public decimal OvertimeEarnings(decimal overtimeHours, decimal overtimeRate)
         {
-            return overtimeEarnings + contractualEarnings;
+            return overtimeHours * overtimeRate;
         }
 
         public decimal OverTimeHours(decimal hoursWorked, decimal contractualHours)
         {
             if (hoursWorked <= contractualHours)
             {
-                overTimeHours = 0.00m;
+                overTimeHours = 0;
             }
             else if (hoursWorked > contractualHours)
             {
@@ -86,6 +87,28 @@ namespace Pay1193.Services.Implement
         public decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees)
         {
             return tax + nic + studentLoanRepayment + unionFees;
+        }
+
+        public IEnumerable<SelectListItem> GetAllTaxYear()
+        {
+            var allTaxYear = _context.TaxYears.Select(taxYears => new SelectListItem
+            {
+                Text = taxYears.YearOfTax,
+                Value = taxYears.Id.ToString()
+            });
+            return allTaxYear;
+        }
+
+        public decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings)
+        {
+          return  overtimeEarnings + contractualEarnings;
+        }
+
+        public async Task Delete(int id)
+        {
+            var paymentrecord = GetById(id);
+            _context.PaymentRecords.Remove(paymentrecord);
+            await _context.SaveChangesAsync();
         }
     }
 }

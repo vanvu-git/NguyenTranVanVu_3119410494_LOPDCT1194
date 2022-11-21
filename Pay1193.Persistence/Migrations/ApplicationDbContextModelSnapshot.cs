@@ -138,8 +138,9 @@ namespace Pay1193.Persistence.Migrations
                     b.Property<decimal>("HourlyRate")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime>("MonthPay")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("MonthPay")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("NetPayment")
                         .HasColumnType("money");
@@ -201,7 +202,7 @@ namespace Pay1193.Persistence.Migrations
             modelBuilder.Entity("Pay1193.Entity.PaymentRecord", b =>
                 {
                     b.HasOne("Pay1193.Entity.Employee", "Employee")
-                        .WithMany()
+                        .WithMany("PaymentRecords")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -215,6 +216,11 @@ namespace Pay1193.Persistence.Migrations
                     b.Navigation("Employee");
 
                     b.Navigation("TaxYear");
+                });
+
+            modelBuilder.Entity("Pay1193.Entity.Employee", b =>
+                {
+                    b.Navigation("PaymentRecords");
                 });
 #pragma warning restore 612, 618
         }

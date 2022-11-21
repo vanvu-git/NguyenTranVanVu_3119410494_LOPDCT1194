@@ -1,4 +1,5 @@
-﻿using Pay1193.Entity;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Pay1193.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,8 @@ namespace Pay1193.Services
         decimal OvertimeEarnings(decimal overtimeEarnings, decimal contractualEarnings);
         decimal TotalDeduction(decimal tax, decimal nic, decimal studentLoanRepayment, decimal unionFees);
         decimal NetPay(decimal totalEarnings, decimal totalDeduction);
+        IEnumerable<SelectListItem> GetAllTaxYear();
+        decimal TotalEarnings(decimal overtimeEarnings, decimal contractualEarnings);
+        Task Delete(int id);
     }
 }
